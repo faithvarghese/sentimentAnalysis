@@ -32,11 +32,10 @@ def frequncy(ifile,ofile):
 
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Check non-terminal/terminal lists in coverage file and mapping file')
+    parser = argparse.ArgumentParser(description='to do frequency_count')
     parser.add_argument('-i', '--input_train', help='Input file after preprocessing')
     parser.add_argument('-o', '--output', help='output frequncy count of words')
     args = parser.parse_args()
     ifile = open(args.input_train,'r')
     ofile = open(args.output, "w")
     frequncy(ifile,ofile)
-# python3 frequency_count.py -i malayalam_train4.tsv -o mal_freq.tsv

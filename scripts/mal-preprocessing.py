@@ -150,7 +150,7 @@ def mal_preprocess(ifile,ifile1,ifile2,ofile):
     ofile.write(new_comments)
 
 if __name__ == '__main__':
-    parser = argparse.ArgumentParser(description='Check non-terminal/terminal lists in coverage file and mapping file')
+    parser = argparse.ArgumentParser(description='mal_preprocess')
     parser.add_argument('-it', '--input_train', help='Input train file')
     parser.add_argument('-s', '--input_mal_stop', help='Input stop file')
     parser.add_argument('-ms', '--input_mal_stem', help='Input stem file')
@@ -161,4 +161,3 @@ if __name__ == '__main__':
     ifile2 = open(args.input_mal_stem,'r')
     ofile = open(args.output, "w")
     mal_preprocess(ifile,ifile1,ifile2,ofile)
-# python3 -it mal-preprocessing.py malayalam_train.tsv -s mal_stop.tsv -ms mal_stem.tsv -o out.tsv

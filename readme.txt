@@ -2,7 +2,7 @@
 To run =>	mal-preprocessing.py or tam-preprocessing.py
 	----
 
-python3 -it mal-preprocessing.py malayalam_train.tsv -s mal_stop.tsv -ms mal_stem.tsv -o mal_train_out.tsv
+python3 mal-preprocessing.py -it malayalam_train.tsv -s mal_stop.tsv -ms mal_stem.tsv -o mal_train_out.tsv
 
 
 		{lang} = tamil or malayalam
